@@ -1,0 +1,17 @@
+Thread started:::Thread-0   - T1
+Thread started:::Thread-1   - T2
+Thread ended:::Thread-0
+Thread started:::Thread-2   - T3
+Thread started:::Thread-3   - T4
+Thread ended:::Thread-1
+Thread ended:::Thread-2
+Thread started:::Thread-4   - T5
+Thread ended:::Thread-3
+Thread ended:::Thread-4
+All threads are dead, exiting main thread
+
+
+
+
+
+

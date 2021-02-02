@@ -1,0 +1,14 @@
+Ciclo de Vida de uma thread
+
+NEW
+RUNNABLE
+BLOCKED
+WAITING
+TIMED_WAITING
+TERMINATED
+
+
+Descreva o que fazem os métodos interrupt(), join() e sleep() e qual a sua
+utilidade.
+
+interrut()
