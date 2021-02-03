@@ -11,4 +11,13 @@ TERMINATED
 Descreva o que fazem os métodos interrupt(), join() e sleep() e qual a sua
 utilidade.
 
-interrut()
+interrupt() para parar ou resumir uma thread a partir de outra
+sleep() pausa uma thread
+join() pausa a thread da qual a funçao foi chamada á espera pela execuçao das outras threads
+
+
+Referencias:
+https://www.geeksforgeeks.org/differences-between-wait-and-join-methods-in-java/#:~:text=The%20method%20wait()%20and,()%20are%20overloaded%20in%20Java.
+https://www.baeldung.com/java-thread-join
+https://www.baeldung.com/java-wait-notify
+https://www.codejava.net/java-core/concurrency/how-to-use-threads-in-java-create-start-pause-interrupt-and-join
