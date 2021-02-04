@@ -11,9 +11,14 @@ TERMINATED
 Descreva o que fazem os métodos interrupt(), join() e sleep() e qual a sua
 utilidade.
 
-interrupt() para parar ou resumir uma thread a partir de outra
+interrupt() se uma thread tiver em espera wait() ou sleep(), interrupt para a thread e lança excepçao
+se nao tiver neste estado, mete a flag interrupted a true
+
 sleep() pausa uma thread
+
 join() pausa a thread da qual a funçao foi chamada á espera pela execuçao das outras threads
+"When we invoke the join() method on a thread, the calling thread goes into a waiting state.
+It remains in a waiting state until the referenced thread terminates."
 
 
 Referencias:
