@@ -1,0 +1,19 @@
+    MAX = 3
+    CountIN = 0              Countout = 2     countout=3          countout=1
+    CountOut= 1             CountIn =3                             countout = 2
+Main------------>----------->------------->------------------->-------------------->
+   sleep(1000)   sleep(1000)   notifyAll(  sleep(3000)          wait()
+t1  i=0 start()  CountOut=1
+    ------------X----------------------------------->------------------------------->
+       wait()    sleep(3000)                 4segs   I=1 wait()
+t2  i=0
+    ------------------------>-------------->------------------>-------------------->
+                        wait()                 sleep(3000)           i=1 notifyall() sleep(3000)
+
+
+
+Here they go!...
+T1 - Cold - 4s
+T2 - Cold - 5s
+T1 - Hot - 8s
+Main - Main done - 8s
