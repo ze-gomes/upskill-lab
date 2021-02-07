@@ -1,0 +1,39 @@
+// Exercício 1
+// Explique quando é que o termo do Java synchronized é utilizado e porque é
+// necessário.
+
+Para resolver o problema de uma condição de corrida em que mais que uma thread
+tentam aceder informaçao partilhada e mutável, utiliza-se o synchronized para sincronizar
+o acesso aos dados partilhados com as várias thread e não permitir erros.
+
+Este bloco "synchronized" utiliza um mecanismo de cadeado que só permite  uma thread aceder
+à informaçao de cada vez
+
+Referencias:
+https://www.baeldung.com/java-synchronized
+https://docs.oracle.com/javase/tutorial/essential/concurrency/syncmeth.html
+
+// Exercício 2
+// Quais as diferenças entre métodos sincronizados e blocos sincronizados?
+
+A principal diferença entre metodos e blocos sincronizados é a secção critica
+onde é colocado o cadeado, no entanto um metodo sincronizado adquire o cadeado do objecto inteiro
+ou seja mais nenhuma thread pode executar metodos sincronizados enquanto uma thread o faz,
+enquanto um bloco sincronizado apenas adquire o cadeado para o objecto que se segue dentro do parenteses
+
+Referencias:
+https://www.java67.com/2013/01/difference-between-synchronized-block-vs-method-java-example.html
+https://stackoverflow.com/questions/20906548/why-is-synchronized-block-better-than-synchronized-method#:~:text=The%20difference%20is%20in%20which,lock%20on%20the%20whole%20object.&text=synchronized%20blocks%20acquires%20a%20lock,until%20the%20synchronized%20block%20exits.
+
+// Exercício 3
+// Qual a diferença entre notify() e notifyAll() ?
+
+Ambos acordam thread que se encontram no estado "Waiting", a diferença é que o notifyAll acorda
+todas as threads que se encontram neste estado enquanto o notify acorda apenas uma thread
+em "Waiting" é acordada, a thread acordada é escolhida pelo JVM (Java Virtual Machine), este método
+só deve ser utilizado quando é irrelevante qual das threads acordar porque podem ser permutáveis.
+Como no caso de uma threadpool
+
+Referencias:
+https://stackoverflow.com/questions/37026/java-notify-vs-notifyall-all-over-again
+https://www.geeksforgeeks.org/difference-notify-notifyall-java/
