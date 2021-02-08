@@ -1,6 +1,4 @@
-package aula03.jantardefilosofos;
-import java.util.ArrayList;
-import java.util.concurrent.Semaphore;
+package aula03.aula.ex1;
 
 public class Mesa{
     int maxcomer = 1;

@@ -1,7 +1,6 @@
 package aula03.trabalho.ex4;
 
-import aula03.soltaojavali_queue.Banquete;
-import aula03.soltaojavali_queue.Javali;package aula03.soltaojavali_queue;
+package aula03.soltaojavali_queue;
 
 public class Carteiro extends Thread{
     private Armazem edificio;

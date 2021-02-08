@@ -1,4 +1,4 @@
-package aula03.soltaojavali_queue;
+package aula03.aula.ex2_3;
 
 public class Glutao extends Thread{
     int id;
@@ -11,11 +11,11 @@ public class Glutao extends Thread{
 
     @Override
     public void run() {
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 30; i++) {
             try {
                 Javali j = banquete.retiraJavali();
-                System.out.println("esta a comer Java");
-                sleep(100); //  come
+                System.out.println("O Javali " + j.num + " Cozinhado pelo cozinheiro " + j.cozinheiro.id + " foi comido");
+                sleep(500); //  come
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

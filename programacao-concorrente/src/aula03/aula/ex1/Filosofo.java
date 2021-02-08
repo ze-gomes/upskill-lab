@@ -1,7 +1,4 @@
-package aula03.jantardefilosofos;
-
-import java.util.ArrayList;
-import java.util.concurrent.Semaphore;
+package aula03.aula.ex1;
 
 public class Filosofo extends Thread{
     Mesa mesa;
